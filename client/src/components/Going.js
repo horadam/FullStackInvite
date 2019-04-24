@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Fragment, Component } from 'react'
 import { getGoingUsers } from '../actions/actions';
 import {connect} from 'react-redux'
 
@@ -13,24 +13,24 @@ class Going extends Component {
 
         console.log('users', this.props.users)
         return (
-            <div>
+            <Fragment>
                 <h1>Going</h1>
                 <div className="userList">
                     <div className="userContainerSmall">
                     {this.props.users.map((user, i) => (
-                        <div key={`going${i}`} className="RandomUser">
+                        <div key={`going${i}`} className="UserListed">
                             <div className="imageDiv">
                             <img alt="userImage" src={user.img} />
                             </div>
-                            <p>Name: {user.fname} {user.lname}</p>
-                            <p>Phone: {user.phone}</p>
-                            <p>Email: {user.email}</p>
+                            <p><span>Name: </span>{user.fname} {user.lname}</p>
+                            <p><span>Phone: </span>{user.phone}</p>
+                            <p><span>Email: </span>{user.email}</p>
                         </div>
                    
                     ))}
                 </div>
                 </div>
-            </div>
+            </Fragment>
         )
     }
 }
