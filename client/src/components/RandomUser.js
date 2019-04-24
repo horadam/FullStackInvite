@@ -52,21 +52,18 @@ class RandomUser extends Component {
             </div>
 
                 <div className="RandomUser">
-
-                    
-
-
                     <div className="imageDiv">
                         <img alt="userImage" src={this.props.img} />
                     </div>
-                        <p>Name: {this.props.fname} {this.props.lname}</p>
-                        <p>Phone: {this.props.phone}</p>
-                        <p>Email: {this.props.email}</p>
+                        <p><span>Name: </span>{this.props.fname} {this.props.lname}</p>
+                        <p><span>Phone: </span>{this.props.phone}</p>
+                        <p><span>Email: </span>{this.props.email}</p>
+                    
+                </div>
 
-                    <div id="goingButtons">
-                        <button onClick={this.going} id="goingButton">Invite</button>
-                        <button onClick={this.notGoing} id="notGoingButton">Don't Invite</button>
-                    </div>
+                <div id="goingButtons">
+                    <button onClick={this.going} id="goingButton">&#10003;</button>
+                    <button onClick={this.notGoing} id="notGoingButton">x</button>
                 </div>
                 
             </div>

@@ -16,6 +16,7 @@ Html {
     width:300px;
     border: 1px solid gray;
     margin:auto;
+    background-color: rgb(228, 222, 222);
 }
 
 .userContainerSmall {
@@ -28,6 +29,7 @@ Html {
     margin: auto;
     display:flex;
     justify-content:space-between;
+    border-bottom: 1px solid gray;
 }
 
 #goingCounter a {
@@ -37,8 +39,13 @@ Html {
 .RandomUser {
     width: 100%;
     background-color: rgb(228, 222, 222);
-    margin: auto;
+    border-bottom: 1px solid gray;
+    
+}
 
+.RandomUser span {
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 .imageDiv {
@@ -47,6 +54,7 @@ Html {
     align-items: center;
     width: 100%;
     height: 200px;
+    border-bottom: 1px solid gray;
 
 }
 
@@ -59,12 +67,32 @@ img {
 #goingButtons {
     display:flex;
     justify-content: space-between;
+    margin: 20px;
+    
+}
+
+#goingButtons button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+#goingButton {
+    background: rgb(56, 160, 56);
+    margin-left: 30px;
+}
+
+#notGoingButton {
+    background: rgb(190, 23, 23);
+    margin-right: 30px;
 }
 
 .userList {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 1000px;
 
 }
 
